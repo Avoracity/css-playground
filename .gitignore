@@ -12,6 +12,13 @@ dist
 dist-ssr
 *.local
 
+
+# Ignore npm package files
+node_modules/
+package.json
+package-lock.json
+
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,3 +29,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+

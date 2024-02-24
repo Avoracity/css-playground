@@ -27,3 +27,38 @@ Router - Specifies the Routing strategy, Routes are defined within it's encapsul
 - expects a react component class or function component
 
 ```element= vs component=``` - ```element=``` is highly favored as it provides more flexibility in defining what is a react component without needing to create additional components
+
+## Tailwindcss installation
+
+```npm install -D tailwindcss postcss autoprefixer``` - 
+adds tailwindcss and postcss packages
+
+```npx tailwindcss init -p``` - 
+creates tailwindcss and postcss config file
+
+## Tailwindcss config
+
+add the path of template files. Doing so allows the internal feature, PurgeCSS, to remove any unused CSS style in the final CSS bundle leading to smaller file size.
+
+```
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+Add the Tailwind directives. Tailwind directives enables tailwind utility classes for use.
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+To use tailwindcss within a JSX file, a CSS file with tailwind directives must be imported.

@@ -1,4 +1,5 @@
 // Likes.jsx
+import "../styles/Likes.css";
 
 export default function Likes() {
   return (
