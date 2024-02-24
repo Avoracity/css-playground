@@ -62,3 +62,12 @@ Add the Tailwind directives. Tailwind directives enables tailwind utility classe
 ```
 
 To use tailwindcss within a JSX file, a CSS file with tailwind directives must be imported.
+
+# installing branch without package.json steps
+
+```npm init -y```
+- install needed packages
+- the flag -y accepts all prompts by default
+
+# Why keep package.json in branch
+Hastes development convienience by having needed packages for installation and configurations for postcss, tailwindcss, etc.
