@@ -81,3 +81,27 @@ Example of defining a PropType
 ```
 
 ```
+
+# Gradient Color in a HTML Tag via coolors.co
+Example of coolors.co CSS Snippet
+
+```
+ backgroundImage: 'linear-gradient(90deg, hsla(23, 62%, 70%, 1) 0%, hsla(9, 81%, 23%, 1) 100%)', backgroundClip: 'text', WebkitBackgroundClip: 'text', color: 'transparent', WebkitTextFillColor: 'transparent'
+ ```
+
+Integration of CSS snippet in a HTML tag
+```
+                    <h1 className="font-bold p-8"style={{ backgroundImage: 'linear-gradient(90deg, hsla(23, 62%, 70%, 1) 0%, hsla(9, 81%, 23%, 1) 100%)', backgroundClip: 'text', WebkitBackgroundClip: 'text', color: 'transparent', WebkitTextFillColor: 'transparent' }}>Welcome to the Homepage</h1>
+```
+
+Important things to note, the following are the background prop equivalent:
+
+`backgroundImage` : linear-gradient
+
+`backgroundClip` : type
+
+`WebkitBackgroundClip` : fill-color
+
+`color` : color
+
+`WebkitTextFillColor` : color
