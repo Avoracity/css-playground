@@ -23,7 +23,7 @@ const RiseUpTransition = ({ children, duration }) => {
 
 RiseUpTransition.propTypes = {
   children: PropTypes.node.isRequired,
-  duration: PropTypes.number.isRequired,
+  duration: PropTypes.number,
 };
 
 export default RiseUpTransition;

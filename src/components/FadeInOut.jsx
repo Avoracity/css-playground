@@ -28,7 +28,7 @@ class FadeInOut extends React.Component {
     duration: PropTypes.number.isRequired,
     className: PropTypes.string,
     style: PropTypes.object,
-    show: PropTypes.object
+    show: PropTypes.bool.isRequired // Ensure it is defined as a boolean prop type
   };
 
   constructor(props) {
