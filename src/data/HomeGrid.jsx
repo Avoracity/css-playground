@@ -1,31 +1,31 @@
 import PropTypes from 'prop-types'; // Import PropTypes for prop validation
 import { SimpleGrid, Box, Heading, Text, Button } from '@chakra-ui/react'; // Import necessary Chakra UI components
-import '../styles/Home.css';
+import '../styles/HomeGrid.css';
 
 export default function HomeGrid() {
     return (
         <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
             {/* More Card components... */}
 
-            <Card bg ="#D7A88F">
+            <Card bg="bg-orange-50" >
                 <CardHeader>
-                    <Heading size='md'>Customer dashboard</Heading>
+                    <Heading size='md' color='black'>Customer dashboard</Heading>
                 </CardHeader>
                 <CardBody>
-                    <Text>View a summary of all your customers over the last month.</Text>
+                    <Text >View a summary of all your customers over the last month.</Text>
                 </CardBody>
                 <CardFooter>
-                    <Button>View here</Button>
+                    <Button color='black'>View here</Button>
                 </CardFooter>
             </Card>
 
             {/* More Card components... */}
-            <Card bg ="#B27E62">
+            <Card bg="bg-amber-950	">
                 <CardHeader>
                     <Heading size='md'>Marketing dashboard</Heading>
                 </CardHeader>
                 <CardBody>
-                    <Text>View a summary of all your customers over the last month.</Text>
+                    <Text color='white'>View a summary of all your customers over the last month.</Text>
                 </CardBody>
                 <CardFooter>
                     <Button>View here</Button>
@@ -40,12 +40,12 @@ export default function HomeGrid() {
 const Card = ({ children, bg}) => {
     return (
         <Box
-            rounded='lg'
-            borderWidth='1px'
-            borderColor='gray.200'
+            boxShadow='0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'
+            borderRadius='12px'
+                        
             p='4'
             overflow='hidden'
-            bg={bg}
+            className={bg} // Tailwind
         >
             {children}
         </Box>
