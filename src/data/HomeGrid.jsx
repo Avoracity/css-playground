@@ -60,7 +60,7 @@ Card.propTypes = {
 // Similarly, define propTypes for CardHeader, CardBody, and CardFooter components
 const CardHeader = ({ children }) => {
     return (
-        <Box borderBottomWidth='1px' pb='2'>
+        <Box  pb='2'>
             {children}
         </Box>
     );
@@ -84,7 +84,7 @@ CardBody.propTypes = {
 
 const CardFooter = ({ children }) => {
     return (
-        <Box borderTopWidth='1px' pt='2'>
+        <Box  pt='2'>
             {children}
         </Box>
     );
