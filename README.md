@@ -71,3 +71,13 @@ To use tailwindcss within a JSX file, a CSS file with tailwind directives must b
 
 # Why keep package.json in branch
 Hastes development convienience by having needed packages for installation and configurations for postcss, tailwindcss, etc.
+
+# React Component
+When using and building a React Component, their PropType attribute must be defined.
+This secures what data is to be expected from one component to another.
+
+Example of defining a PropType
+
+```
+
+```

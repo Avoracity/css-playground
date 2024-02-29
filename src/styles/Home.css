@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body { 
+    background-color : #FFF4EE;
+}
+
+p {
+    font-weight: 500;
+    color : black;
+}
 
 .fade-in {
   opacity: 0;
