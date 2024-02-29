@@ -8,7 +8,7 @@ export default function Homepage() {
         <div>
             <FadeInOut show={true} duration={1000}>
                 <RiseUpTransition>
-                    <h1 className="text-sky-400 p-8">Welcome to the Homepage</h1>
+                    <h1 className="font-bold p-8"style={{ backgroundImage: 'linear-gradient(90deg, hsla(23, 62%, 70%, 1) 0%, hsla(9, 81%, 23%, 1) 100%)', backgroundClip: 'text', WebkitBackgroundClip: 'text', color: 'transparent', WebkitTextFillColor: 'transparent' }}>Welcome to the Homepage</h1>
                 </RiseUpTransition>
             </FadeInOut>
             <FadeInOut show={true} duration={1000}>
