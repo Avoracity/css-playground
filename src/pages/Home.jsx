@@ -3,7 +3,7 @@ import FadeInOut from '../components/FadeInOut.jsx'; // Assuming the 'fadeinout.
 import RiseUpTransition from '../components/RiseUpTransition.jsx';
 import HomeGrid from '../data/HomeGrid.jsx'; // Assuming the DashboardGrid component is in the correct directory
 
-export default function Homepage() {
+export default function Home() {
     return (
         <div>
             <FadeInOut show={true} duration={1000}>

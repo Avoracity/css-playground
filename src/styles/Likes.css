@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.test_subject {
-    
+body {
+    @apply bg-blue-600 !important;
 }
+
+.like-button {
+    cursor: pointer;
+}
+  

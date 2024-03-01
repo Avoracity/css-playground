@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types'; // Import PropTypes for prop validation
 import { SimpleGrid, Box, Text } from '@chakra-ui/react'; // Import necessary Chakra UI components
 import '../styles/HomeGrid.css';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 export default function HomeGrid() {
     return (
         <SimpleGrid spacing={24} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
             {/* More Card components... */}
 
-            <Card bg="bg-orange-50" >
+            <Card bg="bg-orange-50" to="/Likes">
     
                 <CardBody>
                     <Text >View a summary of all your customers over the last month.</Text>
@@ -34,8 +35,9 @@ export default function HomeGrid() {
 }
 
 // Define propTypes for the children prop in Card, CardHeader, CardBody, and CardFooter components
-const Card = ({ children, bg}) => {
+const Card = ({ children, bg, to}) => {
     return (
+        <Link to={to}>
         <Box
             boxShadow='0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'
             borderRadius='12px'            
@@ -45,12 +47,14 @@ const Card = ({ children, bg}) => {
         >
             {children}
         </Box>
+        </Link>
     );
 };
 
 Card.propTypes = {
     children: PropTypes.node.isRequired, // Require children to be a React node
-    bg: PropTypes.string.isRequired
+    bg: PropTypes.string.isRequired,
+    to: PropTypes.string.isRequired
 };
 
 
