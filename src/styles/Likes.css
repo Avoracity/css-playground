@@ -9,10 +9,14 @@ body {
 .like-button {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-
+    transition: width 0.5s, height 0.5s; /* ease into the width height increase/decrease */
+    @apply w-32;
+    @apply h-32;
 }
   
 
   .like-button.clicked {
     transform: rotate(45deg);
+    @apply w-40;
+    @apply h-40;
   }

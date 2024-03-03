@@ -20,7 +20,7 @@ export default function Likes() {
         src={LikesIcon}
         alt="Likes Icon"
         
-        className={`like-button w-32 h-32 ${isClicked ? 'clicked' : ''}`} //*if isClicked true, return clicked, else nothing */
+        className={`like-button ${isClicked ? 'clicked' : ''}`} //*if isClicked true, return clicked, else nothing */
         onClick={handleClick}
       />
     </>
