@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    @apply bg-blue-600 !important;
-}
-
 .like-button {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -15,8 +11,19 @@ body {
 }
   
 
-  .like-button.clicked {
+.like-button.clicked {
     transform: rotate(45deg);
     @apply w-40;
     @apply h-40;
-  }
+}
+
+
+  
+@keyframes line-expand {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100px; /* Adjust length as needed */
+    }
+}
