@@ -41,15 +41,18 @@ export default function Likes() {
   };
 
   return (
-    <>
- 
+    <div className="like-container pt-80">
+    
+      {/* Line animation */}
+      {isClicked && <div className="line-animation"></div>}
+
+      {/* Like button */}
       <img
         src={LikesIcon}
         alt="Likes Icon"
-        
-        className={`like-button ${isClicked ? 'clicked' : ''}`} //*if isClicked true, return clicked, else nothing */
+        className={`like-button ${isClicked ? 'clicked' : ''}`}
         onClick={handleClick}
       />
-    </>
+    </div>
   );
 }

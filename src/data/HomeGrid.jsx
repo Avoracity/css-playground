@@ -19,7 +19,7 @@ export default function HomeGrid() {
             </Card>
 
             {/* More Card components... */}
-            <Card bg="bg-amber-950	">
+            <Card bg="bg-amber-950" to="/Likes">
      
         
                 <CardBody>
@@ -39,9 +39,9 @@ const Card = ({ children, bg, to}) => {
     return (
         <Link to={to}>
         <Box
-            boxShadow='0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'
+            boxShadow={"md"}
             borderRadius='12px'            
-            p='48'
+            p='48px'
             overflow='hidden'
             className={bg} // Tailwind
         >
