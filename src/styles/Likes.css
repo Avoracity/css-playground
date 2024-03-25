@@ -9,22 +9,49 @@
 
 .line-animation {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: red; /* Adjust color as needed */
-  transform: translate(-50%, -50%);
-  animation: line-expand 0.5s ease-out forwards;
+  border-radius: 8px; /* radius of line */
+  width: 100%; /* Full width */
+  height: 20px; /* make line larger */
+  animation: line-expand 0.5s ease-in-out;
 }
 
 @keyframes line-expand {
-  from {
-    width: 0;
+  0% {
+    width: 0; /* Start with width of 0 */
   }
-  to {
-    width: 100px; /* Adjust length as needed */
+
+  100% {
+    
+    width: 100%; /* Reset width to 0 */
   }
+}
+
+.line1 {
+  top: 50%; /* Position the line vertically centered */
+  left: 250px; /* Position the line at the left edge */
+  transform: translateY(-50%) rotate(-45deg); /* Rotate the line -45 degrees and move it up by 50% */
+
+}
+
+.line2 {
+  top: 50%; /* Position the line vertically centered */
+  right: 250px; /* Position the line at the right edge */
+  transform: translateY(-100%) rotate(-135deg); /* Rotate the line -45 degrees and move it up by 50% */
+
+}
+
+.line3 {
+  top: 600px; /* Position the line at the bottom edge */
+  left: 250px; /* Position the line at the left edge */
+  transform: translateY(-100%) rotate(45deg); /* Rotate the line -45 degrees and move it up by 50% */
+
+}
+
+.line4 {
+  top: 600px; /* Position the line at the bottom edge */
+  right: 250px; /* Position the line at the right edge */
+  transform: translateY(-100%) rotate(-30deg); /* Rotate the line -45 degrees and move it up by 50% */
+
 }
 
 .like-button {
@@ -43,12 +70,3 @@
 }
 
 
-  
-@keyframes line-expand {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100px; /* Adjust length as needed */
-    }
-}

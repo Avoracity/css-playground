@@ -39,12 +39,17 @@ export default function Likes() {
 
     }
   };
-
   return (
     <div className="like-container pt-80">
-    
       {/* Line animation */}
-      {isClicked && <div className="line-animation"></div>}
+      {isClicked && (
+        <div>
+          <div className="line-animation line1 bg-red-200"></div>
+          <div className="line-animation line2 bg-blue-200"></div>
+          <div className="line-animation line3 bg-yellow-200"></div>
+          <div className="line-animation line4 bg-green-200"></div>
+        </div>
+      )}
 
       {/* Like button */}
       <img
