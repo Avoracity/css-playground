@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 export default function HomeGrid() {
     return (
-        <SimpleGrid spacing={24} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
+        <SimpleGrid spacing={18} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
             {/* More Card components... */}
 
             <Card bg="bg-orange-50" to="/Likes">
