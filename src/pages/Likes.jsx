@@ -34,10 +34,10 @@ export default function Likes() {
       {/* Line animation */}
       {isClicked && (
         <div>
-          <div className="line-animation line1 bg-red-200"></div>
-          <div className="line-animation line2 bg-blue-200"></div>
-          <div className="line-animation line3 bg-yellow-200"></div>
-          <div className="line-animation line4 bg-green-200"></div>
+          <div className="line-animation line-red bg-red-200"></div>
+          <div className="line-animation line-blue bg-blue-200"></div>
+          <div className="line-animation line-yellow bg-yellow-200"></div>
+          <div className="line-animation line-green bg-green-200"></div>
         </div>
       )}
 

@@ -29,42 +29,36 @@
   height: 20px; /* make line larger */
 }
 
-
-.line1 {
+.line-red {
   top: 50%; /* Position the line vertically centered */
-  left: 250px; /* Position the line at the left edge */
+  left: 95%; /* Position the line at the left edge */
   transform: translateY(-50%) rotate(-45deg); /* Rotate the line -45 degrees and move it up by 50% */
-  animation: line-diag1 1s ease-in-out;
-
+  animation: line-diag-red 0.5s ease-in-out;
 }
 
-.line2 {
+.line-blue {
   top: 50%; /* Position the line vertically centered */
-  right: 250px; /* Position the line at the right edge */
+  right: 95%; /* Position the line at the right edge */
   transform: translateY(-100%) rotate(-135deg); /* Rotate the line -45 degrees and move it up by 50% */
-  animation: line-diag2 1.2s ease-in-out;
-
+  animation: line-diag-blue 0.5s ease-in-out;
 }
 
-.line3 {
-  top: 600px; /* Position the line at the bottom edge */
-  left: 250px; /* Position the line at the left edge */
+.line-yellow {
+  bottom: -25%; /* Position the line at the bottom edge */
+  left: 95%; /* Position the line at the left edge */
   transform: translateY(-100%) rotate(45deg); /* Rotate the line -45 degrees and move it up by 50% */
-  animation: line-diag3 1.5s ease-in-out;
-
+  animation: line-diag-yellow 0.5s ease-in-out;
 }
 
-.line4 {
-  top: 600px; /* Position the line at the bottom edge */
-  right: 250px; /* Position the line at the right edge */
+.line-green {
+  bottom: -25%; /* Position the line at the bottom edge */
+  right: 95%; /* Position the line at the right edge */
   transform: translateY(-100%) rotate(-45deg); /* Rotate the line -45 degrees and move it up by 50% */
-  animation: line-diag4 1.7s ease-in-out;
-
+  animation: line-diag-green 0.5s ease-in-out;
 }
 
-@keyframes line-diag1 {
+@keyframes line-diag-red {
   0% {
-    
     transform: translate(0, 0) rotate(-45deg);
   }
 
@@ -73,7 +67,7 @@
   }
 }
 
-@keyframes line-diag2 {
+@keyframes line-diag-blue {
   0% {
     transform: translate(0, 0) rotate(-135deg);
   }
@@ -83,7 +77,7 @@
   }
 }
 
-@keyframes line-diag3 {
+@keyframes line-diag-yellow {
   0% {
     transform: translate(0, 0) rotate(45deg);
   }
@@ -93,7 +87,7 @@
   }
 }
 
-@keyframes line-diag4 {
+@keyframes line-diag-green {
   0% {
     transform: translate(0, 0) rotate(-45deg);
   }
@@ -102,4 +96,3 @@
     transform: translate(-150px, 150px) rotate(-45deg);
   }
 }
-
