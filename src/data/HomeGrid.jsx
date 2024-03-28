@@ -8,10 +8,10 @@ export default function HomeGrid() {
         <SimpleGrid spacing={18} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
             {/* More Card components... */}
 
-            <Card bg="bg-orange-50" to="/Likes">
+            <Card bg="bg-blue-600" to="/Likes">
     
                 <CardBody>
-                    <Text >View a summary of all your customers over the last month.</Text>
+                    <Text color = 'white' > Like button with confetti animation </Text>
                 </CardBody>
          
               
@@ -19,11 +19,11 @@ export default function HomeGrid() {
             </Card>
 
             {/* More Card components... */}
-            <Card bg="bg-amber-950" to="/Likes">
+            <Card bg="bg-amber-950" to="/Entrance">
      
         
                 <CardBody>
-                    <Text color='white'>View a summary of all your customers over the last month.</Text>
+                    <Text color='white'>Text Design on Entry</Text>
                 </CardBody>
           
                  
@@ -44,6 +44,7 @@ const Card = ({ children, bg, to}) => {
             p='48px'
             overflow='hidden'
             className={bg} // Tailwind
+            height='200px'
         >
             {children}
         </Box>
