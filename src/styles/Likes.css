@@ -57,7 +57,7 @@
 .line4 {
   top: 600px; /* Position the line at the bottom edge */
   right: 250px; /* Position the line at the right edge */
-  transform: translateY(-100%) rotate(-30deg); /* Rotate the line -45 degrees and move it up by 50% */
+  transform: translateY(-100%) rotate(-45deg); /* Rotate the line -45 degrees and move it up by 50% */
   animation: line-diag4 1.7s ease-in-out;
 
 }
@@ -95,11 +95,11 @@
 
 @keyframes line-diag4 {
   0% {
-    transform: translate(0, 0) rotate(-30deg);
+    transform: translate(0, 0) rotate(-45deg);
   }
 
   100% {
-    transform: translate(-150px, 150px) rotate(-30deg);
+    transform: translate(-150px, 150px) rotate(-45deg);
   }
 }
 
