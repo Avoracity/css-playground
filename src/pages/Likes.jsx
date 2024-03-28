@@ -21,24 +21,14 @@ export default function Likes() {
       // Rotate the icon back to its original position after 0.5s
       setTimeout(() => {
         setIsClicked(false);
-      }, 500);
+      }, 1500);
 
-// top-right line 
-// then bot-left line
-// then top-right firework
-// then bot-right firework
-// then top-left firework
-// then bot-left firework
-
-/*
-      setTimeout(()=>{
-        
-      }, 1000);
-*/
 
 
     }
   };
+
+  
   return (
     <div className="like-container pt-80">
       {/* Line animation */}

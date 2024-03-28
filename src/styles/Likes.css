@@ -7,29 +7,34 @@
   position: relative; /* Ensure positioning context for the line */
 }
 
+.like-button {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  transition: width 0.5s, height 0.5s; /* ease into the width height increase/decrease */
+  @apply w-32;
+  @apply h-32;
+}
+
+
+.like-button.clicked {
+  transform: rotate(45deg);
+  @apply w-40;
+  @apply h-40;
+}
+
 .line-animation {
   position: absolute;
   border-radius: 8px; /* radius of line */
   width: 100%; /* Full width */
   height: 20px; /* make line larger */
-  animation: line-expand 0.5s ease-in-out;
 }
 
-@keyframes line-expand {
-  0% {
-    width: 0; /* Start with width of 0 */
-  }
-
-  100% {
-    
-    width: 100%; /* Reset width to 0 */
-  }
-}
 
 .line1 {
   top: 50%; /* Position the line vertically centered */
   left: 250px; /* Position the line at the left edge */
   transform: translateY(-50%) rotate(-45deg); /* Rotate the line -45 degrees and move it up by 50% */
+  animation: line-diag1 1s ease-in-out;
 
 }
 
@@ -37,6 +42,7 @@
   top: 50%; /* Position the line vertically centered */
   right: 250px; /* Position the line at the right edge */
   transform: translateY(-100%) rotate(-135deg); /* Rotate the line -45 degrees and move it up by 50% */
+  animation: line-diag2 1.2s ease-in-out;
 
 }
 
@@ -44,6 +50,7 @@
   top: 600px; /* Position the line at the bottom edge */
   left: 250px; /* Position the line at the left edge */
   transform: translateY(-100%) rotate(45deg); /* Rotate the line -45 degrees and move it up by 50% */
+  animation: line-diag3 1.5s ease-in-out;
 
 }
 
@@ -51,22 +58,48 @@
   top: 600px; /* Position the line at the bottom edge */
   right: 250px; /* Position the line at the right edge */
   transform: translateY(-100%) rotate(-30deg); /* Rotate the line -45 degrees and move it up by 50% */
+  animation: line-diag4 1.7s ease-in-out;
 
 }
 
-.like-button {
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-    transition: width 0.5s, height 0.5s; /* ease into the width height increase/decrease */
-    @apply w-32;
-    @apply h-32;
-}
-  
+@keyframes line-diag1 {
+  0% {
+    
+    transform: translate(0, 0) rotate(-45deg);
+  }
 
-.like-button.clicked {
-    transform: rotate(45deg);
-    @apply w-40;
-    @apply h-40;
+  100% {
+    transform: translate(150px, -150px) rotate(-45deg);
+  }
 }
 
+@keyframes line-diag2 {
+  0% {
+    transform: translate(0, 0) rotate(-135deg);
+  }
+
+  100% {
+    transform: translate(-150px, -150px) rotate(-135deg);
+  }
+}
+
+@keyframes line-diag3 {
+  0% {
+    transform: translate(0, 0) rotate(45deg);
+  }
+
+  100% {
+    transform: translate(150px, 150px) rotate(45deg);
+  }
+}
+
+@keyframes line-diag4 {
+  0% {
+    transform: translate(0, 0) rotate(-30deg);
+  }
+
+  100% {
+    transform: translate(-150px, 150px) rotate(-30deg);
+  }
+}
 
