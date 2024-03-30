@@ -32,40 +32,46 @@
 .line-red {
   top: 50%; /* Position the line vertically centered */
   left: 95%; /* Position the line at the left edge */
-  transform: translateY(-50%) rotate(-45deg); /* Rotate the line -45 degrees and move it up by 50% */
+  transform: translateY(-50%) rotate(-45deg) scale(0,0); /* Rotate the line -45 degrees and move it up by 50% */
   animation: line-diag-red 0.5s ease-in-out;
 }
 
 .line-blue {
+  
   top: 50%; /* Position the line vertically centered */
   right: 95%; /* Position the line at the right edge */
-  transform: translateY(-100%) rotate(-135deg); /* Rotate the line -45 degrees and move it up by 50% */
-  animation: line-diag-blue 1.5s ease-in-out;
+  transform: translateY(-100%) rotate(-135deg) scale(0,0); /* Rotate the line -45 degrees and move it up by 50% */
+  animation: line-diag-blue 0.5s ease-in-out;
+  animation-delay: 0.5s;
+
 }
 
 .line-yellow {
   bottom: -25%; /* Position the line at the bottom edge */
   left: 95%; /* Position the line at the left edge */
-  transform: translateY(-100%) rotate(45deg); /* Rotate the line -45 degrees and move it up by 50% */
+  transform: translateY(-100%) rotate(45deg) scale(0,0); /* Rotate the line -45 degrees and move it up by 50% */
   animation: line-diag-yellow 0.5s ease-in-out;
+  animation-delay: 0.5s;
+
 }
 
 .line-green {
   bottom: -25%; /* Position the line at the bottom edge */
   right: 95%; /* Position the line at the right edge */
-  transform: translateY(-100%) rotate(-45deg); /* Rotate the line -45 degrees and move it up by 50% */
-  animation: line-diag-green 1.5s ease-in-out;
-  
-  animation-delay: 0.1s;
-}
+  transform: translateY(-100%) rotate(-45deg) scale(0,0); /* Rotate the line -45 degrees and move it up by 50% */
+  animation: line-diag-green 0.5s ease-in-out;
+  }
 
 @keyframes line-diag-red {
   0% {
     transform: translate(0, 0) rotate(-45deg);
   }
 
-  90% {
+  50% {
     transform: translate(150px, -150px) rotate(-45deg);
+  }
+  75% {
+    transform: translate(150px, -150px) rotate(-45deg) scale(0,0);
   }
   100% {
     transform: scale(0,0);
@@ -74,11 +80,14 @@
 
 @keyframes line-diag-blue {
   0% {
-    transform: translate(0, 0) rotate(-135deg);
+    transform: translate(0, 0) rotate(-135deg) scale(1,1);
   }
 
-  90% {
+  50% {
     transform: translate(-150px, -150px) rotate(-135deg);
+  }
+  75% {
+    transform: translate(-150px, -150px) rotate(-135deg) scale(0,0);
   }
   100% {
     transform: scale(0,0);
@@ -90,8 +99,11 @@
     transform: translate(0, 0) rotate(45deg);
   }
 
-  90% {
+  50% {
     transform: translate(150px, 150px) rotate(45deg);
+  }
+  75% {
+    transform: translate(150px, 150px) rotate(45deg) scale(0,0);
   }
   100% {
     transform: scale(0,0);
@@ -144,6 +156,8 @@
 
 /* ---------------- *\
 scale(0, 0) to remove out of vision
+declare scale(0,0) before keyframe to initialize as invisible
+0% keyframe scale (1,1) to reappear
 
 example keyframe of sudden fade
 
