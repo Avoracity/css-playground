@@ -40,7 +40,7 @@
   top: 50%; /* Position the line vertically centered */
   right: 95%; /* Position the line at the right edge */
   transform: translateY(-100%) rotate(-135deg); /* Rotate the line -45 degrees and move it up by 50% */
-  animation: line-diag-blue 0.5s ease-in-out;
+  animation: line-diag-blue 1.5s ease-in-out;
 }
 
 .line-yellow {
@@ -54,7 +54,9 @@
   bottom: -25%; /* Position the line at the bottom edge */
   right: 95%; /* Position the line at the right edge */
   transform: translateY(-100%) rotate(-45deg); /* Rotate the line -45 degrees and move it up by 50% */
-  animation: line-diag-green 0.5s ease-in-out;
+  animation: line-diag-green 1.5s ease-in-out;
+  
+  animation-delay: 0.1s;
 }
 
 @keyframes line-diag-red {
@@ -62,8 +64,11 @@
     transform: translate(0, 0) rotate(-45deg);
   }
 
-  100% {
+  90% {
     transform: translate(150px, -150px) rotate(-45deg);
+  }
+  100% {
+    transform: scale(0,0);
   }
 }
 
@@ -72,8 +77,11 @@
     transform: translate(0, 0) rotate(-135deg);
   }
 
-  100% {
+  90% {
     transform: translate(-150px, -150px) rotate(-135deg);
+  }
+  100% {
+    transform: scale(0,0);
   }
 }
 
@@ -82,17 +90,84 @@
     transform: translate(0, 0) rotate(45deg);
   }
 
-  100% {
+  90% {
     transform: translate(150px, 150px) rotate(45deg);
+  }
+  100% {
+    transform: scale(0,0);
   }
 }
 
 @keyframes line-diag-green {
+ 
   0% {
     transform: translate(0, 0) rotate(-45deg);
   }
 
+  50% {
+    transform: translate(-150px, 150px) rotate(-45deg) ;
+  }
+  75% {
+    transform: translate(-150px, 150px) rotate(-45deg) scale(0,0);
+
+  }
   100% {
-    transform: translate(-150px, 150px) rotate(-45deg);
+    transform: scale(0,0);
   }
 }
+
+
+
+
+.line-red-dots {}
+
+.line-yellow-dots {}
+
+.line-green-dots {}
+
+.line-blue-dots {}
+
+@keyframes line-red-dots {}
+
+@keyframes line-yellow-dots {}
+
+@keyframes line-green-dots {}
+
+@keyframes line-blue-dots {}
+
+
+
+
+
+
+
+
+/* ---------------- *\
+scale(0, 0) to remove out of vision
+
+example keyframe of sudden fade
+
+  0% {
+    transform: translate(0, 0) rotate(-45deg);
+  }
+
+  50% {
+    transform: translate(-150px, 150px) rotate(-45deg) ;
+  }
+  65% {
+    transform: scale(0,0);
+
+  }
+  
+}
+
+example keyframe of subtle fade transition
+
+@keyframes line-diag-green {
+  from {     transform: translate(0, 0) rotate(-45deg);
+  }
+  to {
+    transform: translate(-150px, 150px) rotate(-45deg) scale(0,0);
+  }
+}
+\* ------------ */
