@@ -29,38 +29,36 @@
   height: 20px; /* make line larger */
 }
 
-.line-red {
-  top: 50%; /* Position the line vertically centered */
-  left: 95%; /* Position the line at the left edge */
-  transform: translateY(-50%) rotate(-45deg) scale(0,0); /* Rotate the line -45 degrees and move it up by 50% */
+.line-animation:nth-child(1) {
+  top: 50%;
+  left: 95%;
+  transform: translateY(-50%) rotate(-45deg) scale(0,0);
   animation: line-diag-red 0.5s ease-in-out;
 }
 
-.line-blue {
-  
-  top: 50%; /* Position the line vertically centered */
-  right: 95%; /* Position the line at the right edge */
-  transform: translateY(-100%) rotate(-135deg) scale(0,0); /* Rotate the line -45 degrees and move it up by 50% */
+.line-animation:nth-child(2) {
+  top: 50%;
+  right: 95%;
+  transform: translateY(-100%) rotate(-135deg) scale(0,0);
   animation: line-diag-blue 0.5s ease-in-out;
   animation-delay: 0.5s;
-
 }
 
-.line-yellow {
-  bottom: -25%; /* Position the line at the bottom edge */
-  left: 95%; /* Position the line at the left edge */
-  transform: translateY(-100%) rotate(45deg) scale(0,0); /* Rotate the line -45 degrees and move it up by 50% */
+.line-animation:nth-child(3) {
+  bottom: -25%;
+  left: 95%;
+  transform: translateY(-100%) rotate(45deg) scale(0,0);
   animation: line-diag-yellow 0.5s ease-in-out;
   animation-delay: 0.5s;
-
 }
 
-.line-green {
-  bottom: -25%; /* Position the line at the bottom edge */
-  right: 95%; /* Position the line at the right edge */
-  transform: translateY(-100%) rotate(-45deg) scale(0,0); /* Rotate the line -45 degrees and move it up by 50% */
+.line-animation:nth-child(4) {
+  bottom: -25%;
+  right: 95%;
+  transform: translateY(-100%) rotate(-45deg) scale(0,0);
   animation: line-diag-green 0.5s ease-in-out;
-  }
+}
+
 
 @keyframes line-diag-red {
   0% {
