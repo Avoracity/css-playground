@@ -43,10 +43,35 @@ export default function Likes() {
         
         
         <div>
-          <div className="line-dot dots-red bg-red-200"></div>
-          <div className="line-dot dots-blue bg-blue-200"></div>
-          <div className="line-dot dots-yellow bg-yellow-200"></div>
-          <div className="line-dot dots-green bg-green-200"></div>
+   
+          
+          <div className="line-dot red-dot bg-red-200"></div>
+          <div className="line-dot red-dot bg-red-200"></div>
+          <div className="line-dot red-dot bg-red-200"></div>
+          <div className="line-dot red-dot bg-red-200"></div>
+          <div className="line-dot red-dot bg-red-200"></div>
+          <div className="line-dot red-dot bg-red-200"></div>
+
+          <div className="line-dot blue-dot"></div>
+          <div className="line-dot blue-dot"></div>
+          <div className="line-dot blue-dot"></div>
+          <div className="line-dot blue-dot"></div>
+          <div className="line-dot blue-dot"></div>
+          <div className="line-dot blue-dot"></div>
+
+          <div className="line-dot yellow-dot"></div>
+          <div className="line-dot yellow-dot"></div>
+          <div className="line-dot yellow-dot"></div>
+          <div className="line-dot yellow-dot"></div>
+          <div className="line-dot yellow-dot"></div>
+          <div className="line-dot yellow-dot"></div>
+
+          <div className="line-dot green-dot"></div>
+          <div className="line-dot green-dot"></div>
+          <div className="line-dot green-dot"></div>
+          <div className="line-dot green-dot"></div>
+          <div className="line-dot green-dot"></div>
+          <div className="line-dot green-dot"></div>
         </div>
           
         </>
