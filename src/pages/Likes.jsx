@@ -21,7 +21,7 @@ export default function Likes() {
       // Rotate the icon back to its original position after 0.5s
       setTimeout(() => {
         setIsClicked(false);
-      }, 1500);
+      }, 2500);
 
 
 
@@ -31,14 +31,26 @@ export default function Likes() {
   
   return (
     <div className="like-container pt-80">
-      {/* Line animation */}
+      {/* Line animation and dots*/}
       {isClicked && (
+        <>
         <div>
           <div className="line-animation line-red bg-red-200"></div>
           <div className="line-animation line-blue bg-blue-200"></div>
           <div className="line-animation line-yellow bg-yellow-200"></div>
           <div className="line-animation line-green bg-green-200"></div>
         </div>
+        
+        
+        <div>
+          <div className="line-dot dots-red bg-red-200"></div>
+          <div className="line-dot dots-blue bg-blue-200"></div>
+          <div className="line-dot dots-yellow bg-yellow-200"></div>
+          <div className="line-dot dots-green bg-green-200"></div>
+        </div>
+          
+        </>
+
       )}
 
       {/* Like button */}
