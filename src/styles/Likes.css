@@ -104,46 +104,43 @@
   animation: line-red-dots 0.8s 0.5s ease-out;
 }
 
-/* left left */
+/* LEFT LEFT OK */
 .line-dot.red-dot:nth-child(1) {
   top : 50% ;
   left : 50%;
 }
 
-/* top right */
+/* TOP RIGHT OK */
 .line-dot.red-dot:nth-child(2) {
-  top: calc(50% - 15px);
-  left: calc(95% + 45px);
+  top: calc(50% - 45px);
+  left: calc(95% + 5px);
 }
 
-/* bot right */
+/* BOT RIGHT OK */
 .line-dot.red-dot:nth-child(3) {
   top: calc(50% + 45px);
-  left: calc(95% + 45px);
+  left: calc(95% + 15px);
 }
 
-/*top left */
+/* RIGHT RIGHT OK */
 .line-dot.red-dot:nth-child(4) {
-  top: calc(50% - 15px);
-  left: calc(95% - 15px);
+  top: calc(50% - 5px);
+  left: calc(95% + 35px);
 }
 
-/* above square */
+/* TOP LEFT  */
 .line-dot.red-dot:nth-child(5) {
   top: calc(50% - 45px);
   left: calc(95% - 45px);
 }
 
-/* bottom left */
+/*  BOT LEFT  OK */
 .line-dot.red-dot:nth-child(6) {
   top: calc(50% + 45px);
-  left: calc(95% - 15px);
+  left: calc(95% - 45px);
 }
 
-.line-dot.red-dot:nth-child(7) {
-  top: calc(50% + 45px);
-  left: calc(95% - 15px);
-}
+
 /* --- */
 
 /* consecutive blue dots */
