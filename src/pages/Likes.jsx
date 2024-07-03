@@ -22,7 +22,7 @@ export default function Likes() {
       // Rotate the icon back to its original position after 0.5s
       setTimeout(() => {
         setIsClicked(false);
-      }, 2500);
+      }, 1800);
 
 
 
