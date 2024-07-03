@@ -15,7 +15,8 @@ export default function Likes() {
     };
   }, []); // Empty dependency array ensures the effect runs only once when the component mounts
 
-  const handleClick = () => {
+
+  const handleClick = () => { // delays the icon from rotating
     if (!isClicked) {
       setIsClicked(true);
       // Rotate the icon back to its original position after 0.5s
@@ -52,26 +53,26 @@ export default function Likes() {
           <div className="line-dot red-dot bg-red-200"></div>
           <div className="line-dot red-dot bg-red-200"></div>
 
-          <div className="line-dot blue-dot"></div>
-          <div className="line-dot blue-dot"></div>
-          <div className="line-dot blue-dot"></div>
-          <div className="line-dot blue-dot"></div>
-          <div className="line-dot blue-dot"></div>
-          <div className="line-dot blue-dot"></div>
+          <div className="line-dot blue-dot bg-blue-200"></div>
+          <div className="line-dot blue-dot bg-blue-200"></div>
+          <div className="line-dot blue-dot bg-blue-200"></div>
+          <div className="line-dot blue-dot bg-blue-200"></div>
+          <div className="line-dot blue-dot bg-blue-200"></div>
+          <div className="line-dot blue-dot bg-blue-200"></div>
 
-          <div className="line-dot yellow-dot"></div>
-          <div className="line-dot yellow-dot"></div>
-          <div className="line-dot yellow-dot"></div>
-          <div className="line-dot yellow-dot"></div>
-          <div className="line-dot yellow-dot"></div>
-          <div className="line-dot yellow-dot"></div>
+          <div className="line-dot yellow-dot bg-yellow-200"></div>
+          <div className="line-dot yellow-dot bg-yellow-200"></div>
+          <div className="line-dot yellow-dot bg-yellow-200"></div>
+          <div className="line-dot yellow-dot bg-yellow-200"></div>
+          <div className="line-dot yellow-dot bg-yellow-200"></div>
+          <div className="line-dot yellow-dot bg-yellow-200"></div>
 
-          <div className="line-dot green-dot"></div>
-          <div className="line-dot green-dot"></div>
-          <div className="line-dot green-dot"></div>
-          <div className="line-dot green-dot"></div>
-          <div className="line-dot green-dot"></div>
-          <div className="line-dot green-dot"></div>
+          <div className="line-dot green-dot bg-green-200"></div>
+          <div className="line-dot green-dot bg-green-200"></div>
+          <div className="line-dot green-dot bg-green-200"></div>
+          <div className="line-dot green-dot bg-green-200"></div>
+          <div className="line-dot green-dot bg-green-200"></div>
+          <div className="line-dot green-dot bg-green-200"></div>
         </div>
           
         </>

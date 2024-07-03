@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .like-container {
   position: relative; /* Ensure positioning context for the line */
 }
@@ -14,7 +13,6 @@
   @apply w-32;
   @apply h-32;
 }
-
 
 .like-button.clicked {
   transform: rotate(45deg);
@@ -29,85 +27,75 @@
   height: 20px; /* make line larger */
 }
 
-
 .line-animation:nth-child(1) {
   top: 50%;
   left: 95%;
-  transform: translateY(-50%) rotate(-45deg) scale(0,0);
-  animation: line-diag-red 0.8s ease-in-out   
+  transform: translateY(-50%) rotate(-45deg) scale(0, 0);
+  animation: line-diag-red 0.8s ease-in-out;
 }
 
 .line-animation:nth-child(2) {
   top: 50%;
   right: 95%;
-  transform: translateY(-100%) rotate(-135deg) scale(0,0);
-  animation: line-diag-blue 0.8s 0.5s ease-in-out
-
+  transform: translateY(-100%) rotate(-135deg) scale(0, 0);
+  animation: line-diag-blue 0.8s 0.5s ease-in-out;
 }
 
 .line-animation:nth-child(3) {
   bottom: -25%;
   left: 95%;
-  transform: translateY(-100%) rotate(45deg) scale(0,0);
-  animation: line-diag-yellow 0.8s 0.5s ease-in-out
+  transform: translateY(-100%) rotate(45deg) scale(0, 0);
+  animation: line-diag-yellow 0.8s 0.5s ease-in-out;
 }
 
 .line-animation:nth-child(4) {
   bottom: -25%;
   right: 95%;
-  transform: translateY(-100%) rotate(-45deg) scale(0,0);
-  animation: line-diag-green 0.8s ease-in-out
+  transform: translateY(-100%) rotate(-45deg) scale(0, 0);
+  animation: line-diag-green 0.8s ease-in-out;
 }
-
 
 .line-dot {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   position: absolute;
-
 }
 
-
-
-.line-dot.blue-dot{
-  top: 50%;
-  right: 95%;
+/* translate:  TB, RL */
+.line-dot.blue-dot {
   border-radius: 50%;
-  transform: scale(0,0);
-
+  transform: scale(0, 0);
+  translate: -350px -150px;
   animation: line-blue-dots 0.8s 0.9s ease-in-out;
 }
 
-.line-dot.yellow-dot{
-  bottom: -25%;
-  left: 95%;
+.line-dot.yellow-dot {
+  translate: 250px 450px;
   border-radius: 50%;
   animation: line-yellow-dots 0.8s 0.9s ease-in-out;
-  transform: scale(0,0);
+  transform: scale(0, 0);
 }
 
-.line-dot.green-dot{
-  bottom: -25%;
-  right: 95%;
+.line-dot.green-dot {
+  translate: -350px 450px;
   border-radius: 50%;
-  transform: scale(0,0);
+  transform: scale(0, 0);
   animation: line-green-dots 0.8s 0.5s ease-in-out;
-
 }
 
 /* consecutive red dots */
-.line-dot.red-dot{
+.line-dot.red-dot {
   border-radius: 50%;
-  transform: scale(0,0);
+  transform: scale(0, 0);
   translate: 150px -150px;
   animation: line-red-dots 0.8s 0.5s ease-out;
 }
 
 /* LEFT LEFT OK */
 .line-dot.red-dot:nth-child(1) {
-  top : 50% ;
-  left : 50%;
+  top: 50%;
+  left: 50%;
 }
 
 /* TOP RIGHT OK */
@@ -140,20 +128,119 @@
   left: calc(95% - 45px);
 }
 
-
 /* --- */
 
 /* consecutive blue dots */
+/* LEFT LEFT OK */
+.line-dot.blue-dot:nth-child(7) {
+  top: 50%;
+  left: 50%;
+}
+
+/* TOP RIGHT OK */
+.line-dot.blue-dot:nth-child(8) {
+  top: calc(50% - 45px);
+  left: calc(95% + 5px);
+}
+
+/* BOT RIGHT OK */
+.line-dot.blue-dot:nth-child(9) {
+  top: calc(50% + 45px);
+  left: calc(95% + 15px);
+}
+
+/* RIGHT RIGHT OK */
+.line-dot.blue-dot:nth-child(10) {
+  top: calc(50% - 5px);
+  left: calc(95% + 35px);
+}
+
+/* TOP LEFT  */
+.line-dot.blue-dot:nth-child(11) {
+  top: calc(50% - 45px);
+  left: calc(95% - 45px);
+}
+
+/*  BOT LEFT  OK */
+.line-dot.blue-dot:nth-child(12) {
+  top: calc(50% + 45px);
+  left: calc(95% - 45px);
+}
 
 /* --- */
 
-
 /* consecutive yellow dots */
+.line-dot.yellow-dot:nth-child(13) {
+  top: 50%;
+  left: 50%;
+}
 
+/* TOP RIGHT OK */
+.line-dot.yellow-dot:nth-child(14) {
+  top: calc(50% - 45px);
+  left: calc(95% + 5px);
+}
+
+/* BOT RIGHT OK */
+.line-dot.yellow-dot:nth-child(15) {
+  top: calc(50% + 45px);
+  left: calc(95% + 15px);
+}
+
+/* RIGHT RIGHT OK */
+.line-dot.yellow-dot:nth-child(16) {
+  top: calc(50% - 5px);
+  left: calc(95% + 35px);
+}
+
+/* TOP LEFT  */
+.line-dot.yellow-dot:nth-child(17) {
+  top: calc(50% - 45px);
+  left: calc(95% - 45px);
+}
+
+/*  BOT LEFT  OK */
+.line-dot.yellow-dot:nth-child(18) {
+  top: calc(50% + 45px);
+  left: calc(95% - 45px);
+}
 /* --- */
 
 /* consecutive green dots */
+.line-dot.green-dot:nth-child(19) {
+  top: 50%;
+  left: 50%;
+}
 
+/* TOP RIGHT OK */
+.line-dot.green-dot:nth-child(20) {
+  top: calc(50% - 45px);
+  left: calc(95% + 5px);
+}
+
+/* BOT RIGHT OK */
+.line-dot.green-dot:nth-child(21) {
+  top: calc(50% + 45px);
+  left: calc(95% + 15px);
+}
+
+/* RIGHT RIGHT OK */
+.line-dot.green-dot:nth-child(22) {
+  top: calc(50% - 5px);
+  left: calc(95% + 35px);
+}
+
+/* TOP LEFT  */
+.line-dot.green-dot:nth-child(23) {
+  top: calc(50% - 45px);
+  left: calc(95% - 45px);
+}
+
+/*  BOT LEFT  OK */
+.line-dot.green-dot:nth-child(24) {
+  top: calc(50% + 45px);
+  left: calc(95% - 45px);
+}
 /* --- */
 
 @keyframes line-diag-red {
@@ -165,26 +252,26 @@
     transform: translate(150px, -150px) rotate(-45deg);
   }
   75% {
-    transform: translate(150px, -150px) rotate(-45deg) scale(0,0);
+    transform: translate(150px, -150px) rotate(-45deg) scale(0, 0);
   }
   100% {
-    transform: scale(0,0);
+    transform: scale(0, 0);
   }
 }
 
 @keyframes line-diag-blue {
   0% {
-    transform: translate(0, 0) rotate(-135deg) scale(1,1);
+    transform: translate(0, 0) rotate(-135deg) scale(1, 1);
   }
 
   50% {
     transform: translate(-150px, -150px) rotate(-135deg);
   }
   75% {
-    transform: translate(-150px, -150px) rotate(-135deg) scale(0,0);
+    transform: translate(-150px, -150px) rotate(-135deg) scale(0, 0);
   }
   100% {
-    transform: scale(0,0);
+    transform: scale(0, 0);
   }
 }
 
@@ -197,75 +284,64 @@
     transform: translate(150px, 150px) rotate(45deg);
   }
   75% {
-    transform: translate(150px, 150px) rotate(45deg) scale(0,0);
+    transform: translate(150px, 150px) rotate(45deg) scale(0, 0);
   }
   100% {
-    transform: scale(0,0);
+    transform: scale(0, 0);
   }
 }
 
 @keyframes line-diag-green {
- 
   0% {
     transform: translate(0, 0) rotate(-45deg);
   }
 
   50% {
-    transform: translate(-150px, 150px) rotate(-45deg) ;
+    transform: translate(-150px, 150px) rotate(-45deg);
   }
   75% {
-    transform: translate(-150px, 150px) rotate(-45deg) scale(0,0);
-
+    transform: translate(-150px, 150px) rotate(-45deg) scale(0, 0);
   }
   100% {
-    transform: scale(0,0);
+    transform: scale(0, 0);
   }
 }
 
-
-
 @keyframes line-red-dots {
   0% {
-    
-    transform:  scale(0,0) ;
+    transform: scale(0, 0);
   }
   100% {
-    transform:  scale(1,1) ;
+    transform: scale(1, 1);
   }
 }
 
 @keyframes line-blue-dots {
   0% {
-    transform:  scale(0,0);
+    transform: scale(0, 0);
   }
   100% {
-    transform:  scale(1,1);
+    transform: scale(1, 1);
   }
 }
 
 @keyframes line-yellow-dots {
   0% {
-    transform: scale(0,0);
+    transform: scale(0, 0);
   }
   100% {
-    transform:  scale(1,1);
+    transform: scale(1, 1);
   }
 }
 
 @keyframes line-green-dots {
   0% {
-    transform:  scale(0,0);
+    transform: scale(0, 0);
   }
   100% {
-    transform:  scale(1,1);
+    transform: scale(1, 1);
   }
 }
-
-
-
-
-
-
 
 /* ---------------- *\
   timing for animation as following, duration_of_animation initial_animation_delay
